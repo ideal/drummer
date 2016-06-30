@@ -21,5 +21,8 @@
 
 class Benchmark(object):
 
-    def __init__(self):
+    def __init__(self, options = None, args = None):
+        pass
+
+    def start(self):
         pass
