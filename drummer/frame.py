@@ -62,7 +62,6 @@ def encode(**args):
     if mask:
         import random
         maskList = [ random.randint(0, 255) for i in range(4) ]
-        maskList = [ 0x37, 0xfa, 0x21, 0x3d ]
         for m in maskList:
             buf.write(struct.pack('B', m))
         i = 0
